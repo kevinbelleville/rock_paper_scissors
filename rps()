@@ -7,6 +7,11 @@ def rps():
 		comp = computerchoice()
 		#Who won?
 		value = comparison(user,comp)
+		#Print who chose what
+		print "You chose "+user+'.'
+		pic(user)
+		print "I chose "+comp+'.'
+		pic(comp)
 		#Print who won
 		if value == 0:
 			print 'A draw!'
