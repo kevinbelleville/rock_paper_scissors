@@ -1,0 +1,25 @@
+def rps():
+	play = 1
+	score = [0,0,0] #[draws, userwins, compwins]
+	while play == 1:	#start/end the game
+		#Choices
+		user = userchoice()
+		comp = computerchoice()
+		#Who won?
+		value = comparison(user,comp)
+		#Print who won
+		if value == 0:
+			print 'A draw!'
+		if value == 1:
+			print 'You won!'
+		if value == 2:
+			print 'Ha, I won!'
+		#Current score
+		score = score #[draws, userwins, compwins]
+		scoreboard(value, score)
+		print "The current scores are:\nDraws: %s\nPlayer: %s\nComputer %s"%(str(score[0]),str(score[1]),str(score[2]))
+
+
+		play = raw_input('Do you wanna play again? Press 1, if not press 0.\n')
+		play = int(play)
+	print 'Hope you come back and play again soon!'
