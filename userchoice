@@ -1,0 +1,6 @@
+def userchoice():
+	choice = raw_input('Choose one: Rock, Paper, or Scissors.\n')
+	choice = choice.lower()
+	while choice != 'rock' and choice != 'paper' and choice != 'scissors':
+		choice = raw_input("That wasn't a choice! Choose again.\n")
+	return choice
