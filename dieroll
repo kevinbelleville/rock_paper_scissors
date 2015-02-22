@@ -1,0 +1,20 @@
+def dieroll():
+	from random import randrange
+	die_num = raw_input('How many sides are on a die?\n')
+	die_num = int(die_num)
+	roll_num = raw_input('How many dice are you rolling?\n')
+	roll_num = int(roll_num)
+	ans = []
+	for i in range(0,roll_num):
+		num = randrange(1,die_num+1)
+		ans.append(num)
+	print ans
+	sum = 0
+	for i in range(0,len(ans)):
+		sum += ans[i]
+		if i == 0:
+			print "The first die rolled a "+str(ans[i])
+		if i == len(ans):
+			print "The last die rolled a "+str(ans[i])
+		print "The next die rolled a "+str(ans[i])
+	print "The sum of your dice rolls is "+str(sum)+'.'
