@@ -1,0 +1,14 @@
+def comparison(a,b):
+	r = 'rock'
+	p = 'paper'
+	s = 'scissors'
+	if a == b:
+		return 0
+	elif a == r and b == s:
+		return 1
+	elif a == p and b == r:
+		return 1
+	elif a == s and b == p:
+		return 1
+	else:
+		return 2
