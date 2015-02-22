@@ -1,0 +1,11 @@
+def computerchoice():
+	from random import random
+	num = random()
+	print num
+	if num < 0.3333333:
+		choice = 'rock'
+	if 0.3333333 < num < 0.6666666:
+		choice = 'paper'
+	if 0.6666666 < num:
+		choice = 'scissors'
+	return choice
