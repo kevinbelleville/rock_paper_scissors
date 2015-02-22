@@ -1,0 +1,19 @@
+def rock():
+	print "  .----.-----.-----.-----.\n /      \     \     \     \ \n|  \/    |     |   __L_____L__\n|   |    |     |  (           \ \n|    \___/    /    \______/    | \n|        \___/\___/\___/       | \n \      \     /               / \n  |                        __/ \n   \_                   __/ \n    |        |         | \n    |                  | \n    |                  |"
+	
+def paper():
+	print "  ______  \n |      | \n |      | \n |      | \n |      | \n |______| "
+	
+def scissors():
+	print "    _    _\n   (_)  / )\n     | (_/\n    _+/\n   //|\ \n  // | )\n (/  |/\n"
+
+
+
+
+def pic(a):
+	if a == 'rock':
+		rock()
+	if a == 'paper':
+		paper()
+	if a == 'scissors':
+		scissors()
